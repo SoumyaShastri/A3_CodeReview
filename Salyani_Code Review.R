@@ -95,4 +95,24 @@ if (wrong_guesses >= max_wrong_guesses) {
 }
 
 #*Code Review by Soumya Shastri 
-#*Please see branch "Code-Review" for detailed comments
+
+
+#*Line 3: The text file attached to your submission was titled "Doc3-1.txt" whereas 
+#*the readline function read "Doc3-text"; this results in an error message when you 
+#*source since no such file or directory exists. For the purposes of reviewing the 
+#*remainder of the code and to test its functionality, I changed the name of the
+#*file path to the correct title. 
+#*
+#*Line 6: Choosing a random element from the list works well using the sample() function. Good job!  
+#*
+#*Line 11: The next error message that appears once the text file name is corrected is that 
+#*the object "word_length" was not found since it was never defined in the code. This prevents
+#*further code that references "word_length" from working as it should. I'd recommend that 
+#*as you are providing information to the user about the letters in the word and the number 
+#*of wrong guesses they are allowed, also to provide the instructions or perhaps create a welcome
+#*message to the user to let them know they can start the game 
+#*
+#*Line 14: The object, "max_wrong_guesses" was not defined and hence was also not found in the code 
+#*
+#*Line 19-25: In order to display the progress of the user, I also used the dash method as a visual cue, 
+#*it may work, but since it references 'word_length', I cannot run to test and see. 
