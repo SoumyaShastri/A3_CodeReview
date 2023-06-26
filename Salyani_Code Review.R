@@ -94,3 +94,5 @@ if (wrong_guesses >= max_wrong_guesses) {
   cat("Sorry, better luck next time! The correct was:", correct_word, "\n")
 }
 
+#*Code Review by Soumya Shastri 
+#*Please see branch "Code-Review" for detailed comments
