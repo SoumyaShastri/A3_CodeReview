@@ -96,7 +96,6 @@ if (wrong_guesses >= max_wrong_guesses) {
 
 #*Code Review by Soumya Shastri 
 
-
 #*Line 3: The text file attached to your submission was titled "Doc3-1.txt" whereas 
 #*the readline function read "Doc3-text"; this results in an error message when you 
 #*source since no such file or directory exists. For the purposes of reviewing the 
@@ -116,3 +115,23 @@ if (wrong_guesses >= max_wrong_guesses) {
 #*
 #*Line 19-25: In order to display the progress of the user, I also used the dash method as a visual cue, 
 #*it may work, but since it references 'word_length', I cannot run to test and see. 
+#*
+#*Line 42: The code appears to correctly handle the acceptance of both lowercase and uppercase letters. Unfortunately, I am 
+#*unable to directly test this functionality due to the previously mentioned undefined objects. 
+#*
+#*Line 52: Regarding the game flow, it is unclear whether the user can continue making guesses after an incorrect word 
+#*guess. Typically, in Hangman, once the entire word is guessed, the game is over. If the guess is incorrect, the answer 
+#*is revealed at that point.
+#*
+#*Line 57: Although this code verifies that the user has entered a single character, it would be advantageous to add an 
+#*additional check to ensure that the user input is specifically a letter. This can be done using the 'grep' function, for
+#*example, which was learned last week. 
+#*
+#*Line 65-86: As the user guesses character by character, it would be beneficial to replace the dashes in the visual 
+#*representation with the correct letters. This would allow the user to observe their progress throughout the game.
+#*
+#*Final comments: Overall, most of the requirements of the assignment were attempted. The code is accompanied 
+#*by detailed comments at each step, which greatly aids in understanding its functionality. However, I highly 
+#*recommend thoroughly testing the code by running and sourcing it multiple times to ensure its full functionality. 
+#*Although I wasn't able to play your game this time, once the major concerns have been resolved, I'd be delighted 
+#*to try it once again. 
